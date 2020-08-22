@@ -1,0 +1,76 @@
+@import "/reset.css";
+
+body {
+  background-color: #f1f2f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.canvas {
+  margin-top: 30px;
+  width: 500px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+.controls {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls__buttons {
+  margin-bottom: 30px;
+}
+
+.controls__button {
+  all: unset;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 5px 0;
+  width: 80px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+}
+
+.controls__button:active {
+  transform: scale(0.97);
+}
+
+.controls__colors {
+  display: flex;
+}
+
+.controls__color {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05), 0 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.controls__color:not(:last-child) {
+  margin-right: 8px;
+}
+
+.controls__range {
+  margin-bottom: 30px;
+}
+
+.controls__range input {
+  cursor: pointer;
+  appearance: none;
+  background: transparent;
+  outline: none;
+  background-color: #c1c3cc;
+  height: 5px;
+  width: 150px;
+}
